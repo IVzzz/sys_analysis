@@ -1,3 +1,4 @@
+import json
 import numpy as np
 
 
@@ -45,7 +46,9 @@ def get_kernel(table):
     return kern
 
 
-def task(rang1, rang2):
+def task(json1, json2):
+    rang1 = json.loads(json1)
+    rang2 = json.loads(json2)
     get_int_matrix(rang1)
     get_int_matrix(rang2)
 
