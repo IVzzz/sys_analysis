@@ -46,4 +46,4 @@ def task(csvString):
         for i in range(1, n):
             count_dif_number[i] += num_list.count(i)
     res = count_final_entropy(count_dif_number, n)
-    print(res)
+    return res
