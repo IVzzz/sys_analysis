@@ -2,7 +2,7 @@ from io import StringIO
 import csv
 from math import log
 
-'''для расчета энтропии запустить функцию get_entropy,
+'''для расчета энтропии запустить функцию task,
    передав строку из csv как аргумент'''
 
 def get_data(csvString):
@@ -19,7 +19,7 @@ def count_final_entropy(num_list, n):
         res -= num_list[i] * i * log(i/(n - 1), 2) * 1/(n - 1)
     return res
 
-def get_entropy(csvString):
+def task(csvString):
     data = get_data(csvString)
     tree = {}
     nodes = set()
