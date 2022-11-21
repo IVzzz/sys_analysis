@@ -1,8 +1,7 @@
 from io import StringIO
 import csv
-from math import log
 
-'''для расчета энтропии запустить функцию task,
+'''запустить функцию task,
    передав строку из csv как аргумент'''
 
 def get_data(csvString):
