@@ -20,7 +20,7 @@ def count_final_entropy(num_list, n):
     return res
 
 def task(csvString):
-    data = get_data(csvString).split('\n')
+    data = csvString.split('\n')
     tree = {}
     nodes = set()
     for i in data:
